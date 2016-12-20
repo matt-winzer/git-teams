@@ -1,12 +1,12 @@
 // Update with your config settings.
-
+require('dotenv').config();
 module.exports = {
 
   development: {
     client: 'pg',
-    connection: "postgres://localhost/nfl_teams"
+    connection: process.env.LOCAL_DB_URL
   },
 
-  
+
 
 };
